@@ -1,0 +1,387 @@
+@design-width: 750rem;
+@per: @design-width/10;
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    background: url('../images/page1/page1_bg.png') no-repeat;
+    background-size: 100% auto;
+}
+.page2 {
+    background: url('../images/page2/page2_bg.png') no-repeat;
+    background-size: 100% auto;
+}
+.page3{
+    background: url('../images/page3/page3_bg.png') no-repeat;
+    background-size: 100% auto;
+}
+.page4{
+    background: url('../images/page4/page4_bg.png') no-repeat;
+    background-size: 100% auto;
+}
+
+// page1 内部样式
+.page1 {
+    .logo {
+        position: absolute;
+        width: 276/@per;
+        top: 66/@per;
+        left: 230/@per;
+    }
+    .circle1 {
+        width: 600/@per;
+        position: absolute;
+        top: 185/@per;
+        left: 75/@per;
+        animation: circle1 10s  linear infinite;
+    } 
+    .circle2 {
+        width: 576/@per;
+        position: absolute;
+        top: 198/@per;
+        left: 87/@per;
+        animation: circle2 10s  linear infinite;
+    }
+    .circle3 {
+        width: 331/@per;
+        position: absolute;
+        top: 319/@per;
+        left: 210/@per;
+        animation: circle3 1s  linear infinite alternate;
+    }
+    .circle4 {
+        width: 140/@per;
+        position: absolute;
+        top: 201/@per;
+        right: 103/@per;
+        animation: circle3 1s  linear infinite alternate;
+    }
+    .circle5 {
+        width: 100/@per;
+        position: absolute;
+        left: 85/@per;
+        top:594/@per;
+        animation: circle3 1s  linear infinite alternate;
+    }
+    .circle6 {
+        width: 100/@per;
+        position: absolute;
+        right: 86/@per;
+        top:1006/@per;
+        z-index: 10;
+        animation: circle3 1s  linear infinite alternate;
+    }
+    .yun1 {
+        width: 94/@per;
+        position: absolute;
+        top: 451/@per;
+        left: 455/@per;
+        animation: yun 5s  linear infinite ;
+    }
+    .yun2 {
+        width: 141/@per;
+        position: absolute;
+        top: 544/@per;
+        right: 60/@per;
+        animation: yun 4s  linear infinite ;
+    }
+    .yun3 {
+        width: 123/@per;
+        position: absolute;
+        left: 69/@per;
+        top: 579/@per;
+        z-index: 10;
+        animation: yun 3s  linear infinite ;
+    }
+    .text1 {
+        width: 241/@per;
+        position: absolute;
+        top: 144/@per;
+        left: 251/@per;
+        z-index: 20;
+    }
+    .text2 {
+        width: 83/@per;
+        position: absolute;
+        right: 306/@per;
+        top:777/@per;
+    }
+    .text3 {
+        width: 580/@per;
+        position: absolute;
+        left: 84/@per;
+        top:938/@per;
+        z-index: 20;
+    }
+    .xiaoji {
+        width: 151/@per;
+        position: absolute;
+        top: 101/@per;
+        right: 41/@per;
+        z-index: 10;
+        animation: xiaoji 2s  linear infinite;
+    }
+    .xiaoren1 {
+        width: 299/@per;
+        position: absolute;
+        left: 0/@per;
+        top:746/@per;
+        animation: xiaoren1 2s linear infinite alternate;
+    }
+    .xiaoren2 {
+        width: 244/@per;
+        position: absolute;
+        right: 0/@per;
+        top:903/@per;
+        animation: xiaoren2 2s linear infinite alternate;
+    }
+    .next1 {
+        width: 105/@per;
+        position: absolute;
+        left: 322/@per;
+        bottom: 80/@per;
+        z-index: 20;
+        animation: next1 1s ease-in infinite;
+    }
+    @keyframes circle1{
+    	0%{}
+    	100%{transform:rotate(360deg);}
+    }
+    @keyframes circle2{
+    	0%{}
+    	100%{transform:rotate(-360deg);}
+    }
+    @keyframes circle3{
+    	0%{transform:scale(1,1)}
+    	100%{transform:scale(.9,.9)}
+    }
+	@keyframes yun{
+		0%{}
+		25%{transform:translate(5px)}
+		50%{transform:translate(0px)}
+		75%{transform:translate(-5px)}
+		100%{transform:translate(0px)}
+	}
+	@keyframes xiaoji{
+    	0%{transform:rotate(0deg)}
+        25%{transform:rotate(-20deg)}
+		50%{transform:rotate(0deg)}
+        100%{transform:rotate(0deg)}
+    }
+    @keyframes next1{
+    	0%{}
+        70%{transform:translate(0px,-20px) scale(1.1,1.1)}
+    	100%{transform:translate(0px,-20px) scale(1.2,1.2);
+             opacity: .5;
+             }
+    }
+    @keyframes xiaoren1{
+    	0%{}
+		100%{transform:translate(10px) rotate(10deg) scale(1.1)}
+    }
+    @keyframes xiaoren2{
+    	0%{}
+		100%{transform:translate(-10px) rotate(-10deg) scale(1.1)}
+    }
+}
+.page2{
+    .border{
+        width:650/@per;
+        position: absolute;
+        top:93/@per;
+        left:50/@per;
+    }
+    .logo{
+        width:276/@per;
+        position: absolute;
+        top:111/@per;
+        left:231/@per;
+    }
+    .tri1{
+        width:576/@per;
+        position: absolute;
+        top:168/@per;
+        left:87/@per;
+    }
+    .tri2{
+        width:526/@per;
+        position: absolute;
+        top:196/@per;
+        left:112/@per;
+    }
+
+    .tri3{
+        width:427/@per;
+        position: absolute;
+        top:946/@per;
+        left:128/@per;
+    }
+    .yun1{
+        width:94/@per;
+        position: absolute;
+        top:202/@per;
+        right:173/@per;
+    }
+    .yun2{
+        width:55/@per;
+        position: absolute;
+        top:443/@per;
+        right:112/@per;
+    }
+    .yun3{
+        width:94/@per;
+        position: absolute;
+        top:509/@per;
+        left:80/@per;
+    }
+    .text1{
+        width:511/@per;
+        position: absolute;
+        top:259/@per;
+        left:136/@per;
+    }
+    .text2{
+        width:443/@per;
+        position: absolute;
+        top:954/@per;
+        left:147/@per;
+        z-index: 10;
+    }
+    .ren1{
+        width:168/@per;
+        position: absolute;
+        top:681/@per;
+        left:140/@per;
+    }
+    .ren2{
+        width:131/@per;
+        position: absolute;
+        top:673/@per;
+        right:140/@per;
+    }
+    .gift{
+        width:129/@per;
+        position: absolute;
+        top:668/@per;
+        left:321/@per;
+    }
+    .next2{
+        width:105/@per;
+        position: absolute;
+        bottom:80/@per;
+        left:322/@per;
+    }
+}
+.page3{
+    .border{
+        width:640/@per;
+        position: absolute;
+        top:94/@per;
+        left:53/@per;
+    }
+    .text1{
+        width:550/@per;
+        position: absolute;
+        top:186/@per;
+        left:100/@per;
+    }
+    .text2{
+        width:305/@per;
+        position: absolute;
+        top:903/@per;
+        left:221/@per;
+    }
+    .piying1{
+        width:132/@per;
+        position: absolute;
+        top:143/@per;
+        left:117/@per;
+    }
+    .piying2{
+        width:203/@per;
+        position: absolute;
+        top:460/@per;
+        left:105/@per;
+    }
+    .piying3{
+        width: 175/@per;
+        position: absolute;
+        top:465/@per;
+        left:290/@per;
+    }
+    .piying4{
+        width:144/@per;
+        position: absolute;
+        top:467/@per;
+        right:117/@per;
+    }
+    .fly1{
+        width:105/@per;
+        position: absolute;
+        top:150/@per;
+        right:222/@per;
+    }
+    .fly2{
+        width:113/@per;
+        position: absolute;
+        top:240/@per;
+        right:111/@per;
+    }
+    .logo{
+        width:276/@per;
+        position: absolute;
+        top:751/@per;
+        left: 235/@per;
+    }
+    .hua{
+        width: 406/@per;
+        position: absolute;
+        top:812/@per;
+        left:171/@per;
+    }
+    .yun1{
+        width:94/@per;
+        position: absolute;
+        top:836/@per;
+        right:236/@per;
+    }
+    .yun2{
+        width: 94/@per;
+        position: absolute;
+        top:945/@per;
+        left:102/@per;
+    }
+    .yun3{
+        width:55/@per;
+        position: absolute;
+        top:1005/@per;
+        right:152/@per;
+    }
+    .next3{
+        width:105/@per;
+        position: absolute;
+        bottom:80/@per;
+        left:322/@per;
+    }
+}
+.page4{
+    .text1{
+        width:277/@per;
+        position: absolute;
+        top:88/@per;
+        left:102/@per;
+    }
+    .plate{
+        width:538/@per;
+        position: absolute;
+        top:147/@per;
+        left:104/@per;
+    }
+}
